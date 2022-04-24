@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Short rURLs</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Short rURLS</h1>
+      <P>¡Un acortador de URLs hecho con Rust!</p>
+    </header>
+    <main>
+      <h2>¡Bienvenido a mi acortador de URLs!</h2>
+      <p>
+        Hecho con rust en el Backend y utilizando una base de datos Redis para manejar la disponibilidad (TTL).<br />
+        <h6><small>Las URLs tienen un TTL de una hora.</small></h6>
+      </p>
+      <div>
+        <form action="/new" method="post">
+          <label for="url">URL a acortar:</label><br />
+          <input type="url" name="original" id="url" />
+          <button type="submit">Acortar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>An Esteban's world work!</p>
+    </footer>
+  </body>
+</html>

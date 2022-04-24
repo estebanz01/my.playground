@@ -1,0 +1,24 @@
+[package]
+name = "url-shortener"
+version = "0.1.0"
+authors = ["Esteban Zapata Rojas"]
+edition = "2018"
+homepage = "https://estebanz.co"
+repository = "https://github.com/estebanz01/my.playground/blob/main/rust/url-shortener"
+license-file = "https://github.com/estebanz01/my.playground/blob/main/LICENSE"
+description = "A DIY, predictable URL shortener with Redis and Rust."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+data-encoding = "2.3"
+qrcodegen = "1.7"
+rand = "0.8"
+rand_pcg = "0.3"
+rand_seeder = "0.2"
+readonly = "0.2"
+regex = "1"
+simple_redis = "0.6"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
